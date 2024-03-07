@@ -1,5 +1,4 @@
-// Task:17
-
+// Task:16
 // Create a Guest List Array
 let guestList = ["Anas","Bilal","Hamza","Haider"];
 
@@ -10,10 +9,10 @@ let dontcome = guestList[0];
 console.log(dontcome, "Nahi Aha Skta"); // Print Message:
 
 // Add or Remove values from Guest List Array
-guestList.splice(0,1,"Hakeem");
+guestList.splice(0,1,"Hakeem"); // Print Message:
  
 // Message Print for Bigger Table
-console.log("Good News ! We have Found a Bigger Table For Dinner."); // Print Message
+console.log("Good News ! We have Found a Bigger Table For Dinner."); // Print Message:
 
 
 // Adding a new value at starting index of array
@@ -27,28 +26,9 @@ let middleIndex:number=Math.floor(guestList.length / 2);
 
 //Adding a new guest to Middle index of array
 guestList.splice(middleIndex, 0, "Ali");
-
 // Print Message of Updates List
-console.log("Update List of our Guests"); // Print Message:
+console.log("Update List of our Guests");
 
 // Sending a invitation Message to our guests one by one with their names  
 guestList.forEach(oneguest => console.log(`Salam ${oneguest},would you like to dinner with me`));
 
-// INform that only two guest can be invited for dinner
-console.log("unforunately, the new dinner table wont arrive on time, so I can only invite two Guests to dinner With me"); // Print Message:
-
-// using while-loop to remove guests from the array until 
-while(guestList. length > 2) {
- let removedGuest = guestList.pop();
- console.log(`Sorry, ${removedGuest} I can invite you to dinner`); // Print Message:
-}
-
-// Sending a invitations to the last two guest on the list 
-console.log("Invitation to the last 2 Guests"); // Print Message:
-guestList.forEach(lasttwo => console.log(`Luckly ${lasttwo},you are still invited to dinner`));
-
-// Removing last two Guest from the list
-guestList.pop();
-guestList.pop();
-
-console.log("Empty List:",guestList); // Print Message:
