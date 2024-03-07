@@ -1,24 +1,14 @@
- // Task:40 Album: Write a function called make_album() that builds a Object describing a music album. 
-//  The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information.
-//  Use the function to make three dictionaries representing different albums. 
-//  Print each return value to show that Objects are storing the album information correctly. 
-// Add an optional parameter to make_album() that allows you to store the number of tracks on an album. 
-// If the calling line includes a value for the number of tracks, add that value to the album’s Object.
-// Make at least one new function call that includes the number of tracks on an album.
+// Task:39 Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
+// "Lahore, Pakistan"
+// Call your function with at least three city-country pairs, and print the value that’s returned.
 
-function makeAlbum (artist: string, title: string): {artst: string; title: string} {
-    const dictionaries = {
-        artist: artist.charAt(0).toUpperCase() + artist.slice(1),
-        title: title.charAt(0).toUpperCase() + title.slice(1),
-    };
-        return dictionaries;
+function cityCountry(city: string, country: string ): string {
+    return `${city}, ${country}`
 }
+let c1 = cityCountry('lahore' , 'pakistan')
+let c2 = cityCountry('tokyo' , 'japan')
+let c3 = cityCountry('paris' , 'france')
 
-let album = makeAlbum("ali" ,"light")
-console.log(album) // Print Message:
-
-album = makeAlbum("bilal" ,"red wave")
-console.log(album) // Print Message:
-
-album = makeAlbum("hamza" ,"seenbreez")
-console.log(album) // Print Message:
+console.log(c1) // Print Message:
+console.log(c2) // Print Message:
+console.log(c3) // Print Message:
