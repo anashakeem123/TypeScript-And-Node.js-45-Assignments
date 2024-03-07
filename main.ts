@@ -1,6 +1,15 @@
-// Task:02 Personal Message: Store a person’s name in a variable, and print a message to that person.
-// Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
+// Task:01 Install Node.js, TypeScript and VS Code on your computer.
 
-// Create a variable
-var personName = "Anas Hakeem,";
-console.log('"Hello', personName, 'would you like to learn some Python today?"'); // Print Message
+// Node.js install on your computer.
+let Node_js = " node -Versin 20.11.1";
+console.log(Node_js); // Print Value
+
+// TypeScript install on your computer.
+let Type_Script = "tsc -Versin 5.3.3";
+console.log(Type_Script); // Print Value
+
+// Vs Code install on yur computer.
+let Vs_code = "Version 1.86..2";
+console.log(Vs_code); // Print Value
+
+// Three Software install on your computer. 
