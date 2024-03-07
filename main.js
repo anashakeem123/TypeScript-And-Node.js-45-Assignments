@@ -1,29 +1,37 @@
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
-//Task:18
-// Making a Array of countries and Print its Orginal Order
-var countriesToVisit = ["China", "Denmark", "Brazil", "Argentina"];
-console.log("Orginal Order:", countriesToVisit);
-// Print the Array in Alphabetical Order without modifying the Actual Array List
-console.log("Alphabetical Order:", __spreadArray([], countriesToVisit, true).sort());
-// show that the array is still in its Orginal Order
-console.log("still in Orginal Order:", countriesToVisit);
-// Print the Array is Reverse Order without the Actualy Array List
-console.log("Reverse Order:", __spreadArray([], countriesToVisit, true).reverse());
-// show that the array is still in its Orginal Order
-console.log("still in Orginal Order:", countriesToVisit);
-// We have Changed the Orginal Array Order Now 
-console.log("Orginal Array Reverse:", countriesToVisit.reverse());
-// Print the array to show that it's back to it's orginal order
-console.log("Back to Orginal Order:", countriesToVisit.reverse());
-// Print the array to show that it's order has been changed in Alphabetical order now
-console.log("sorted in Alphabetical Order:", countriesToVisit.sort());
-// We have Changed again the Orginal Array Order Now in reverse order again
-console.log("Orginal Array Reverse Again:", countriesToVisit.reverse());
+// Task:17
+// Create a Guest List Array
+var guestList = ["Anas", "Bilal", "Hamza", "Haider"];
+// Making Variable for those guest who cant come 
+var dontcome = guestList[0];
+// Print the name of guest who cant come 
+console.log(dontcome, "Nahi Aha Skta"); // Print Message:
+// Add or Remove values from Guest List Array
+guestList.splice(0, 1, "Hakeem");
+// Message Print for Bigger Table
+console.log("Good News ! We have Found a Bigger Table For Dinner."); // Print Message
+// Adding a new value at starting index of array
+guestList.unshift("Kamran");
+// Adding a New value at ending index of array
+guestList.push("Talha");
+//Making a variable for storing a middle index of our  guest list array
+var middleIndex = Math.floor(guestList.length / 2);
+//Adding a new guest to Middle index of array
+guestList.splice(middleIndex, 0, "Ali");
+// Print Message of Updates List
+console.log("Update List of our Guests"); // Print Message:
+// Sending a invitation Message to our guests one by one with their names  
+guestList.forEach(function (oneguest) { return console.log("Salam ".concat(oneguest, ",would you like to dinner with me")); });
+// INform that only two guest can be invited for dinner
+console.log("unforunately, the new dinner table wont arrive on time, so I can only invite two Guests to dinner With me"); // Print Message:
+// using while-loop to remove guests from the array until 
+while (guestList.length > 2) {
+    var removedGuest = guestList.pop();
+    console.log("Sorry, ".concat(removedGuest, " I can invite you to dinner")); // Print Message:
+}
+// Sending a invitations to the last two guest on the list 
+console.log("Invitation to the last 2 Guests"); // Print Message:
+guestList.forEach(function (lasttwo) { return console.log("Luckly ".concat(lasttwo, ",you are still invited to dinner")); });
+// Removing last two Guest from the list
+guestList.pop();
+guestList.pop();
+console.log("Empty List:", guestList); // Print Message:
