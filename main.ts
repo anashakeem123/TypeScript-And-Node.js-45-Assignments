@@ -1,7 +1,6 @@
-// Task:14 Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? 
-// Make a list that includes at least three people you’d like to invite to dinner. 
-// Then use your list to print a message to each person, inviting them to dinner.
+// Task:13 Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples.
+// Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
 
-// Create a Variable
-let guestList = ["Anas","Bilal","Hamza","Haider"]; // Create a index value:
-guestList.forEach(onGuest => console.log(`Salam ${onGuest}, would you Like to dinner with me?`)); // Print List items
+// Create a Variable:
+let transportationmodes = ["Bus","car","bike","sport car"]; // Create a index value:
+transportationmodes.forEach(Mode => console.log(`I would like to own a ${Mode}`)); // Print List items:
