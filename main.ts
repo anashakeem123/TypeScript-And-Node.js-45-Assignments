@@ -1,4 +1,8 @@
-// Task:16
+// Task:15 Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
+// • Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
+// • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+// • Print a second set of invitation messages, one for each person who is still in your list.
+
 // Create a Guest List Array
 let guestList = ["Anas","Bilal","Hamza","Haider"];
 
@@ -6,13 +10,13 @@ let guestList = ["Anas","Bilal","Hamza","Haider"];
 let dontcome = guestList[0];
 
 // Print the name of guest who cant come 
-console.log(dontcome, "Nahi Aha Skta"); // Print Message:
+console.log(dontcome, "Nahi Aha Skta");
 
 // Add or Remove values from Guest List Array
-guestList.splice(0,1,"Hakeem"); // Print Message:
+guestList.splice(0,1,"Hakeem");
  
 // Message Print for Bigger Table
-console.log("Good News ! We have Found a Bigger Table For Dinner."); // Print Message:
+console.log("Good News ! We have Found a Bigger Table For Dinner.");
 
 
 // Adding a new value at starting index of array
@@ -31,4 +35,3 @@ console.log("Update List of our Guests");
 
 // Sending a invitation Message to our guests one by one with their names  
 guestList.forEach(oneguest => console.log(`Salam ${oneguest},would you like to dinner with me`));
-
