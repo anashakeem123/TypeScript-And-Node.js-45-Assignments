@@ -1,21 +1,10 @@
-// Task:42 Unchanged Magicians: Start with your work from Exercise 40. 
-// Call the function make_great() with a copy of the array of magicians’ names.
-//  Because the original array will be unchanged, return the new array and store it in a separate array.
-//  Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
-function show_magicians3(magicians) {
-    magicians.forEach(function (magician) { return console.log(magician); });
-}
-function show_magicians2(magicians) {
-    magicians.forEach(function (magician) { return console.log(magician); });
-}
-function make_great2(magicians) {
-    var greatMagicians = [];
-    for (var i = 0; i < magicians.length; i++) {
-        greatMagicians.push(magicians[i] + ' the Great');
+// Task:41 Make a array of magician’s names.
+// Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
+function show_magicians(magicians) {
+    for (var _i = 0, magicians_1 = magicians; _i < magicians_1.length; _i++) {
+        var magician_1 = magicians_1[_i];
+        console.log(magician_1.charAt(0).toUpperCase() + magician_1.slice(1));
     }
-    return greatMagicians;
 }
-var magicians3 = ["usman", "haseeb", "wajahat"];
-var greatMagicians2 = make_great2(magicians3);
-show_magicians3(magicians3);
-show_magicians2(greatMagicians2);
+var magician = ["ali", "hamza", "bilal"];
+show_magicians(magician);
