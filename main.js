@@ -1,5 +1,11 @@
-// Task:11 Names: Store the names of a few of your friends in a array called names.
-// Print each person’s name by accessing each element in the list, one at a time.
-// Create a Variable:
-var friendsName = ["\nAnas", "Rehman", "Talha", "Hamza",]; // Create a index value:
-friendsName.forEach(function (Friend) { return console.log(Friend); }); // Print List iterm:
+// Task:10 Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each.
+// If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. 
+// Then write one sentence describing what the program does.
+// Addition:
+console.log(4 + 4); // Print Value
+// Sunbtraction:
+console.log(12 - 4); // Print Value
+// Multiplication:
+console.log(4 * 2); // Print Value
+// Division:
+console.log(16 / 2); // Print Value
