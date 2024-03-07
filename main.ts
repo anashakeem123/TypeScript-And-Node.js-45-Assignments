@@ -1,19 +1,23 @@
-// Task:32 Do the following to create a program that simulates how websites ensure that everyone has a unique username.
-// • Make a list of five or more usernames called current_users.
-// • Make another list of five usernames called new_users. Make sure one or two of the new usernames are also in the current_users list.
-// • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
-// • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
+// Task:31 Add an if test to Exercise 28 to make sure the list of users is not empty.
+// • If the list is empty, print the message We need to find some users!
+// • Remove all of the usernames from your array, and make sure the correct message is printed.
 
 // Create a Array:
-let current_users : string [] = ["Ali","Khan","Bilal", "Haider", "admin"] // Create a index List:
-let new_users : string [] = ["Ali","admin","Kamran","Aliza","Junaid"] // Create a index List:
+let users : string [] = ["Ali","Khan","Bilal", "Haider", "admin"] // Create a index List
 
-let current_users_lower : string [] =current_users.map(user => user.toLowerCase())
+if (users.length == 0) {
+  console.log("We need to find same users!") // Print Message
+} else {
+  for (let user of users) {
+    if ( user === "admin") {
+      console.log("Hello admin, would you like to see a status report?") // Print Message
+    } else {
+      console.log(`Hello ${user}, thank you for logging in again`) // Print Message
+    }
+  }
+}
 
-for (let new_user of new_users) {
-      if (current_users_lower.includes (new_user.toLowerCase())) {
-      console.log(`Sorry ${new_user}, that name is taken`)  // Print Message:
-      } else {
-        console.log(`Yes ${new_users}, is still in avalible list`) // Print Message:
-      }   
+users = []
+if (users.length === 0) {
+  console.log("We need to find same users!")
 }
