@@ -1,15 +1,19 @@
-// Task:34 Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
-// • Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
-// • Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
- 
-// create a Array:
-let favourite_Pizza : string [] = ["Pepperoni ","Chicken","veg"] // Create a index List:
+// Task:33 Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+// • Store the numbers 1 through 9 in a array.
+// • Loop through the array.
+// • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
 
-for (let pizza of favourite_Pizza) {
-    console.log(pizza) // Print Message:
+// Create a Array
+let numbers : number [] = [1,2,3,4,5,6,7,8,9] // Create a index number List
+
+for (let number of numbers) {
+  if (number === 1) {
+     console.log(`${number}st`) // 1st
+  } else if (number === 2) {
+    console.log(`${number}nd`) // 2nd
+  } else if (number === 3) {
+    console.log(`${number}rd`) // 3rd
+  } else {
+    console.log(`${number}th`) // 4th //5th // 6th // 7th  // 8th // 9th
+  }
 }
-console.log("\n") // Line space:
-for (let pizza of favourite_Pizza){
-    console.log(`I really Like ${pizza} pizza!`) // Print Message:
-}
-console.log("\nI really Love pizza") // Print Message:
