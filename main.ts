@@ -1,15 +1,7 @@
-// Task:10 Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each.
-// If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. 
-// Then write one sentence describing what the program does.
+// Task:09 Favorite Number: Store your favorite number in a variable. 
+// Then, using that variable, create a message that reveals your favorite number. Print that message.
 
-// Addition:
-console.log(4 + 4); // Print Value
-
-// Sunbtraction:
-console.log(12 - 4); // Print Value
-
-// Multiplication:
-console.log(4 * 2); // Print Value
-
-// Division:
-console.log(16 / 2); // Print Value
+// Create a Variable
+let favorite_Number = 10;
+let message = "My favorite Number is:";
+console.log(message,favorite_Number); // Print Message and Number:
