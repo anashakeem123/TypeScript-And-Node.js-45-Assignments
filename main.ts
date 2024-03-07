@@ -1,10 +1,8 @@
-// Task:6 Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name.
-// Make sure you use each character combination, "\t" and "\n", at least once. Print the name once,
-//  so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+// Task:05 Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person.
+// Then compose your message and store it in a new variable called message. Print your message.
+//  once said, “A person who never made a mistake never tried anything new.”
+// Create a Variable:
+let famousPerson: string = "Albert Einstein";
+let message: string = "once said, “A person who never made a mistake never tried anything new.”";
+console.log(famousPerson,message); // Print Message:
 
-// Create a Variable
-let white_space_Name = "\n\t Anas Hakeem\n\t";
-console.log(white_space_Name); // Print Message:
-
-let without_whitespace_Name = white_space_Name.trim(); // Space Remove:
-console.log(without_whitespace_Name); // Print Message:
