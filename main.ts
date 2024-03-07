@@ -1,12 +1,16 @@
-// Task:22 Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen.
-// Change an index in one of your programs to produce an index error. 
-// Make sure you correct the error before closing the program.
+// Tsak:21 They think of something you could store in a TypeScript Object.
+// Write a program that creates Objects containing these items.
 
-// Creating a Array
-let errorArray:string[] = ["Ali","Hamza","Khan","Kamran"]; // Create a index List:
+interface itCourse {
+    courseName: string;
+    location: string;
+    onSiteStudents: number;
+}
 
-// Producing Error ! by Accessing index of Array
-console.log(errorArray[5]); // Print Message:
+let itCourse = {
+    courseName : "TypeScript And JavaScript",
+    location : "Governor HOuse Sindh",
+    onSiteStudents : "50000",
 
-// Error Removed
-console.log(errorArray[2]); // Print Message:
+}
+console.log(itCourse); // Print Message:
