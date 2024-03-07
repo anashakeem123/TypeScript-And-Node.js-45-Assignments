@@ -1,6 +1,5 @@
-// Task:12 Greetings: Start with the array you used in Exercise 11, 
-// but instead of just printing each person’s name, print a message to them. 
-// The text of each message should be the same, but each message should be personalized with the person’s name.
-// Create a Variable
-var friendsName = ["Hamza", "Usman", "Haider", "Bilal"]; // Create a index Value
-friendsName.forEach(function (friendName) { return console.log("Hello ".concat(friendName, ",How are you?")); }); // Printe List iterm
+// Task:11 Names: Store the names of a few of your friends in a array called names.
+// Print each person’s name by accessing each element in the list, one at a time.
+// Create a Variable:
+var friendsName = ["\nAnas", "Rehman", "Talha", "Hamza",]; // Create a index value:
+friendsName.forEach(function (Friend) { return console.log(Friend); }); // Print List iterm:
