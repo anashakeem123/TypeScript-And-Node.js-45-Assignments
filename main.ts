@@ -1,19 +1,19 @@
-// Task:33 Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
-// • Store the numbers 1 through 9 in a array.
-// • Loop through the array.
-// • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
+// Task:32 Do the following to create a program that simulates how websites ensure that everyone has a unique username.
+// • Make a list of five or more usernames called current_users.
+// • Make another list of five usernames called new_users. Make sure one or two of the new usernames are also in the current_users list.
+// • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
+// • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
 
-// Create a Array
-let numbers : number [] = [1,2,3,4,5,6,7,8,9] // Create a index number List
+// Create a Array:
+let current_users : string [] = ["Ali","Khan","Bilal", "Haider", "admin"] // Create a index List:
+let new_users : string [] = ["Ali","admin","Kamran","Aliza","Junaid"] // Create a index List:
 
-for (let number of numbers) {
-  if (number === 1) {
-     console.log(`${number}st`) // 1st
-  } else if (number === 2) {
-    console.log(`${number}nd`) // 2nd
-  } else if (number === 3) {
-    console.log(`${number}rd`) // 3rd
-  } else {
-    console.log(`${number}th`) // 4th //5th // 6th // 7th  // 8th // 9th
-  }
+let current_users_lower : string [] =current_users.map(user => user.toLowerCase())
+
+for (let new_user of new_users) {
+      if (current_users_lower.includes (new_user.toLowerCase())) {
+      console.log(`Sorry ${new_user}, that name is taken`)  // Print Message:
+      } else {
+        console.log(`Yes ${new_users}, is still in avalible list`) // Print Message:
+      }   
 }
