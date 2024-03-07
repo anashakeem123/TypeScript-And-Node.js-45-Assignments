@@ -1,16 +1,7 @@
-// Tsak:21 They think of something you could store in a TypeScript Object.
-// Write a program that creates Objects containing these items.
-
-interface itCourse {
-    courseName: string;
-    location: string;
-    onSiteStudents: number;
-}
-
-let itCourse = {
-    courseName : "TypeScript And JavaScript",
-    location : "Governor HOuse Sindh",
-    onSiteStudents : "50000",
-
-}
-console.log(itCourse); // Print Message:
+// Task:20
+// Use full Hacking Programming Languages Array
+let HackingLanguages:string[]=["C","java","JAvaScript","Ruby","PHP","Bash","SQL","Perl"];
+// Print the Message of Array
+console.log("List of Programming Languages:"); // Print Message:
+// Print the value of Array in the Form of List
+HackingLanguages.forEach(Hack => console.log(Hack)); // Print Message List:
