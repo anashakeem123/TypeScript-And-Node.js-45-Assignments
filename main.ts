@@ -1,10 +1,12 @@
-// Task:38 Write a function called describe_city() that accepts the name of a city and its country. 
-// The function should print a simple sentence, such as Karachi is in Pakistan. 
-// Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+// Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript.
+// Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
 
-function describe_city(city: string, country: string = 'Pakistan'):void {
-    console.log(`${city} is in ${country}`) // Print Value
+function makeShirt(size: string = 'large', text: string = 'I love typeScript'):void {
+    console.log(`you have order a ${size}, shirt that says ${text}`)
 }
-describe_city('karachi') // default sentence
-describe_city('franca','europe')
-describe_city('lahore','punjab')
+
+ makeShirt();
+ makeShirt('medium')
+
+//  different Message
+console.log('small', 'I need a big shirt to wear') // Print Message
